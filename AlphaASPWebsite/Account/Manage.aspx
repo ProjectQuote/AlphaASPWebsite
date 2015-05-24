@@ -16,8 +16,7 @@
             <section id="passwordForm">
                 <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
                     <p>
-                        Non si dispone di una password locale per questo sito. Aggiungere una
-                        password locale per accedere senza account di accesso esterno.
+                        Non si dispone di una password per questo sito.
                     </p>
                     <div class="form-horizontal">
                         <h4>Form impostazione password</h4>
