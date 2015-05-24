@@ -14,7 +14,9 @@ namespace AlphaASPWebsite.Account
         protected void CreateUser_Click(object sender, EventArgs e)
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
+            String comple;
+            comple = BirthDate.Text;
+            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, BirthDate = Convert.ToDateTime(comple)}; //da revisionare il convert
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {

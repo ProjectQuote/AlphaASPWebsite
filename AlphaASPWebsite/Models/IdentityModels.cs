@@ -13,6 +13,7 @@ namespace AlphaASPWebsite.Models
     // È possibile aggiungere dati utente specificando altre proprietà per la classe utente. Per ulteriori informazioni visitare http://go.microsoft.com/fwlink/?LinkID=317594.
     public class ApplicationUser : IdentityUser
     {
+        public DateTime BirthDate { get; set; }
         public Task<ClaimsIdentity> GenerateUserIdentityAsync(ApplicationUserManager manager)
         {
             return Task.FromResult(GenerateUserIdentity(manager));
