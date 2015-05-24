@@ -309,6 +309,10 @@
     <Compile Include="Migrations\201505241836164_Birthdate.Designer.cs">
       <DependentUpon>201505241836164_Birthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505242050000_Name.cs" />
+    <Compile Include="Migrations\201505242050000_Name.Designer.cs">
+      <DependentUpon>201505242050000_Name.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Profile.aspx.cs">
@@ -348,6 +352,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201505241836164_Birthdate.resx">
       <DependentUpon>201505241836164_Birthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505242050000_Name.resx">
+      <DependentUpon>201505242050000_Name.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,6 +14,7 @@ namespace AlphaASPWebsite.Models
     public class ApplicationUser : IdentityUser
     {
         public DateTime BirthDate { get; set; }
+        public String Name { get; set; }
         public Task<ClaimsIdentity> GenerateUserIdentityAsync(ApplicationUserManager manager)
         {
             return Task.FromResult(GenerateUserIdentity(manager));

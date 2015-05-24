@@ -16,7 +16,7 @@ namespace AlphaASPWebsite.Account
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             String comple;
             comple = BirthDate.Text;
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, BirthDate = Convert.ToDateTime(comple)}; //da revisionare il convert BirthDate
+            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, Name = Name.Text, BirthDate = Convert.ToDateTime(comple)}; //da revisionare il convert BirthDate
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {
