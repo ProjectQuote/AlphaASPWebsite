@@ -33,7 +33,7 @@ namespace AlphaASPWebsite.Account
                 if (user != null)
                 {
                     IdentityHelper.SignIn(manager, user, RememberMe.Checked);
-                    IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                    Response.Redirect("/Profile.aspx");  
                 }
                 else
                 {
